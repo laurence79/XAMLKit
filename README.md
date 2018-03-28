@@ -5,13 +5,14 @@ XAMLKit is an in-progress implementation of Microsoft's eXtensible Application M
 ## Pods
 
 Eventually this library will be packaged into cocoapods, for now include the source under `lib/XAMLKit`.
+
+| Area | Purpose |
 | --- | --- |
 | Core | Everything for creating objects from XAML files |
 | Databinding | Supporting the `{Binding ...}` syntax etc. |
 | Flexbox | For flexbox inspired layout in UIKit |
 | Resources | Enabling the `{StaticResource ...}` syntax etc. |
 | UIKit | Special UIKit extensions for working with XAML declared user interfaces |
-| --- | --- |
 
 ## Setting up a project to use XAMLKit
 
