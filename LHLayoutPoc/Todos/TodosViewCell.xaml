@@ -1,0 +1,3 @@
+<UITableViewCell css_usesFlexbox="true" css_alignContent="center" css_paddingAll="10" >
+    <UILabel text="{XAMLBinding title}" numberOfLines="0" />
+</UITableViewCell>

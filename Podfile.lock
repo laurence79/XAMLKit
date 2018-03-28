@@ -1,0 +1,21 @@
+PODS:
+  - Block-KVO (3.0)
+
+DEPENDENCIES:
+  - Block-KVO (from `https://github.com/Tricertops/Block-KVO.git`)
+
+EXTERNAL SOURCES:
+  Block-KVO:
+    :git: https://github.com/Tricertops/Block-KVO.git
+
+CHECKOUT OPTIONS:
+  Block-KVO:
+    :commit: b7d2df0f7dd86aa930f361398ca21ce75879e8ff
+    :git: https://github.com/Tricertops/Block-KVO.git
+
+SPEC CHECKSUMS:
+  Block-KVO: 6e489d53756d5cb03128ed420fb1f1085522007f
+
+PODFILE CHECKSUM: b92a32d90ccd37cb362b5726fcdc7f19559823f0
+
+COCOAPODS: 1.3.1

@@ -1,0 +1,15 @@
+<UIWindow>
+    <UIWindow.xaml_resources>
+        <UIColor xaml_key="textColor" hex="#000000"/>
+        <XAMLStyle xaml_key="shadow">
+            <XAMLStyleSetter keyPath="layer.cornerRadius" value="2" />
+            <XAMLStyleSetter keyPath="layer.shadowColor" value="#FFFFFF" />
+            <XAMLStyleSetter keyPath="layer.shadowOpacity" value="0.05" />
+            <XAMLStyleSetter keyPath="layer.shadowOffset" value="0,2" />
+            <XAMLStyleSetter keyPath="layer.shadowRadius" value="2" />
+        </XAMLStyle>
+        <XAMLStyle xaml_key="drops" basedOn="{XAMLStaticResource shadow}">
+            <XAMLStyleSetter keyPath="backgroundColor" value="#BB00FF" />
+        </XAMLStyle>
+    </UIWindow.xaml_resources>
+</UIWindow>

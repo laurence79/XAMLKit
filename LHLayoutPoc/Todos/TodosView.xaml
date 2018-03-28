@@ -1,0 +1,63 @@
+<UIView css_usesFlexbox="true"
+    backgroundColor="#FFFFFF"
+    css_flexDirection="column">
+    
+    <UIView.xaml_style>
+        <XAMLStyle>
+            <XAMLStyle.triggers>
+                <XAMLDataTrigger binding="{XAMLBinding menuOpen}" value="{NSNumber bool=YES}">
+                    <XAMLStyleSetter keyPath="css_positionRight" value="-250"/>
+                </XAMLDataTrigger>
+                <XAMLDataTrigger binding="{XAMLBinding menuOpen}" value="{NSNumber bool=NO}">
+                    <XAMLStyleSetter keyPath="css_positionRight" value="0"/>
+                </XAMLDataTrigger>
+            </XAMLStyle.triggers>
+        </XAMLStyle>
+    </UIView.xaml_style>
+    
+    <UITableView xaml_itemsSource="{XAMLBinding items}" css_flexGrow="1" css_positionAll="0" css_positionType="absolute">
+        <TodosViewCell xaml_deleteAction="{XAMLAction deleteTodo, context={XAMLBinding}}" />
+    </UITableView>
+    
+    <UIView css_usesFlexbox="true" css_flexDirection="row" css_alignItems="center"
+        css_paddingAll="30" xaml_style="{XAMLStaticResource drops}">
+        
+        <UIButton type="custom" css_marginAll="4">
+            <UIButton.xaml_controlStateAppearances>
+                <XAMLButtonControlStateAppearance xaml_key="normal" title="Menu" titleColor="{XAMLStaticResource textColor}" />
+            </UIButton.xaml_controlStateAppearances>
+            <UIButton.xaml_actions>
+                <XAMLAction name="openMenu" controlEvents="touchUpInside" />
+            </UIButton.xaml_actions>
+        </UIButton>
+        
+        <UITextField placeholder="Description"
+            text="{XAMLBinding addTodoText, mode=TwoWay}"
+            css_flexGrow="1" css_marginAll="4"/>
+        
+        <UIButton type="custom" css_marginAll="4">
+            <UIButton.xaml_controlStateAppearances>
+                <XAMLButtonControlStateAppearance xaml_key="normal" title="Add" titleColor="{XAMLStaticResource textColor}" />
+            </UIButton.xaml_controlStateAppearances>
+            <UIButton.xaml_actions>
+                <XAMLAction name="addTodo" controlEvents="touchUpInside" />
+            </UIButton.xaml_actions>
+        </UIButton>
+        
+    </UIView>
+    
+    <UIView css_usesFlexbox="true" css_positionType="absolute" css_positionAll="0" css_positionStart="-250" css_width="250" backgroundColor="#9900FF" xaml_style="{XAMLStaticResource shadow}">
+        
+        <UIButton type="custom" css_positionType="absolute"  css_positionTop="30" css_positionRight="30">
+            <UIButton.xaml_controlStateAppearances>
+                <XAMLButtonControlStateAppearance xaml_key="normal" title="Close" titleColor="#FFFFFF" />
+            </UIButton.xaml_controlStateAppearances>
+            <UIButton.xaml_actions>
+                <XAMLAction name="closeMenu" controlEvents="touchUpInside" />
+            </UIButton.xaml_actions>
+        </UIButton>
+        
+    </UIView>
+    
+</UIView>
+
