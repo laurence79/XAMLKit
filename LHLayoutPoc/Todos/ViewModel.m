@@ -48,12 +48,8 @@
     }
 }
 
-- (void)openMenu:(id)context {
+- (void)toggleMenu:(id)context {
     self.menuOpen = !self.menuOpen;
-}
-
-- (void)closeMenu:(id)context {
-    self.menuOpen = NO;
 }
 
 ADD_KVC_TO_MANY_RELATIONSHIP(_items, items, Items, ViewModelItem *)

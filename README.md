@@ -49,6 +49,9 @@ Cells are all currently of the default height no matter what the context.
 Consider adding configuration which maps view model Class to cell template.
 Consider adding slide-in buttons for cells declaritively.
 
+### Data Triggers don't work after reload
+Further investigation required
+
 ### Inter-pod dependencies
 There are odd dependencies between the pods here and there, needs cleaning up.
 
