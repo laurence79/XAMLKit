@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		18B79975426DF9F29354E412 /* libPods-LHLayoutPocTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB12FA963C81B8FFC85D5D2 /* libPods-LHLayoutPocTests.a */; };
+		29402023206E773A0042B10D /* UIImage+XAML.m in Sources */ = {isa = PBXBuildFile; fileRef = 2940201F206E77390042B10D /* UIImage+XAML.m */; };
+		29402024206E773A0042B10D /* UIImageView+XAML.m in Sources */ = {isa = PBXBuildFile; fileRef = 29402021206E773A0042B10D /* UIImageView+XAML.m */; };
 		2941502D1FE7F1340024C573 /* XAMLStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2941502C1FE7F1340024C573 /* XAMLStyle.m */; };
 		294150331FE7F3160024C573 /* XAMLStyleSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 294150321FE7F3160024C573 /* XAMLStyleSetter.m */; };
 		294150361FE7F4BB0024C573 /* NSObject+XAMLStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 294150351FE7F4BB0024C573 /* NSObject+XAMLStyle.m */; };
@@ -119,6 +121,10 @@
 
 /* Begin PBXFileReference section */
 		2623EB0D3C97DCA984923E53 /* libPods-LHLayoutPocUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LHLayoutPocUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2940201F206E77390042B10D /* UIImage+XAML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+XAML.m"; sourceTree = "<group>"; };
+		29402020206E773A0042B10D /* UIImageView+XAML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+XAML.h"; sourceTree = "<group>"; };
+		29402021206E773A0042B10D /* UIImageView+XAML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+XAML.m"; sourceTree = "<group>"; };
+		29402022206E773A0042B10D /* UIImage+XAML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+XAML.h"; sourceTree = "<group>"; };
 		2941502B1FE7F1340024C573 /* XAMLStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XAMLStyle.h; sourceTree = "<group>"; };
 		2941502C1FE7F1340024C573 /* XAMLStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XAMLStyle.m; sourceTree = "<group>"; };
 		294150311FE7F3160024C573 /* XAMLStyleSetter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XAMLStyleSetter.h; sourceTree = "<group>"; };
@@ -564,6 +570,10 @@
 				29DB869D1FE33CBA00F31253 /* UIButton */,
 				29DB86A81FE33CBA00F31253 /* UIColor+XAML.h */,
 				29DB86A91FE33CBA00F31253 /* UIColor+XAML.m */,
+				29402022206E773A0042B10D /* UIImage+XAML.h */,
+				2940201F206E77390042B10D /* UIImage+XAML.m */,
+				29402020206E773A0042B10D /* UIImageView+XAML.h */,
+				29402021206E773A0042B10D /* UIImageView+XAML.m */,
 				29DB86AA1FE33CBA00F31253 /* UITableView+XAML.h */,
 				29DB86AB1FE33CBA00F31253 /* UITableView+XAML.m */,
 				29DB86AC1FE33CBA00F31253 /* UITableViewCell+XAML.h */,
@@ -996,6 +1006,7 @@
 				29DB86CE1FE33CBA00F31253 /* CSSWrapXAMLConverter.m in Sources */,
 				29DB86C81FE33CBA00F31253 /* CSSDirectionXAMLConverter.m in Sources */,
 				29DB86B91FE33CBA00F31253 /* XAMLONParser.m in Sources */,
+				29402023206E773A0042B10D /* UIImage+XAML.m in Sources */,
 				29DB86C31FE33CBA00F31253 /* UITextField+XAMLBindings.m in Sources */,
 				2980E93D1FD7F775001EEF4F /* AppDelegate.m in Sources */,
 				29DB86D21FE33CBA00F31253 /* UIView+Resources.m in Sources */,
@@ -1021,6 +1032,7 @@
 				29DB86D61FE33CBA00F31253 /* UIButtonTypeConverter.m in Sources */,
 				294150331FE7F3160024C573 /* XAMLStyleSetter.m in Sources */,
 				29DB86CF1FE33CBA00F31253 /* UIView+Flexbox.m in Sources */,
+				29402024206E773A0042B10D /* UIImageView+XAML.m in Sources */,
 				294150361FE7F4BB0024C573 /* NSObject+XAMLStyle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

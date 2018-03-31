@@ -12,6 +12,7 @@
 @implementation UIColor (XAML)
 
 + (NSObject *)xaml_withAttributes:(NSDictionary<NSString *,id> *)attributes {
+    
     if (attributes[@"named"]) {
         UIColor * color = [UIColor colorNamed:attributes[@"named"]];
         if (!color) {

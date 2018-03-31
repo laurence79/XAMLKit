@@ -7,6 +7,8 @@
 //
 
 #import "UIView+XAML.h"
+#import "XAMLConverter.h"
+#import "UIViewContentModeConverter.h"
 
 @implementation UIView (XAML)
 
@@ -16,6 +18,10 @@
 
 + (Class)xaml_classForLayer {
     return [CALayer class];
+}
+
++ (nullable id<XAMLConverter>)xaml_converterForContentMode {
+    return [UIViewContentModeConverter sharedInstance];
 }
 
 + (nullable NSString *)xaml_defaultContentPropertyName {
